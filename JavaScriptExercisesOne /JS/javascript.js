@@ -30,11 +30,35 @@ document.getElementById('city').innerHTML = work.location;
 document.getElementById('year').innerHTML = work.since;
 
 
-var carro = ['Toyota', 'Camry', 2009]
+var carro = [
+	{
+		Model:"Toyota",
+		Make:"Camry",
+		Year:"2009",
+		
+
+	},
+	{
+		Model:"Honda",
+		Make:"Accord",
+		Year:"2004",
+		
+
+	},
+	{
+		Model:"Nissan",
+		Make:"Maxima",
+		Year:"2014",
+		
+
+	}
+]
 console.log(carro);
 
 for (let i = 0 ; i < carro.length; i++){
-	console.log(carro.length[i]);
+	console.log(carro[i].Model);
+	console.log(carro[i].Make);
+	console.log(carro[i].Year);
 }
 
 document.body.style.color = "red";
